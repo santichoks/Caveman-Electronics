@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #CFD2CF;
+    font-family: sans-serif;
+    padding: 3rem;
+    line-height: 1.75;
+}
+
+.header {
+    height: 80vh;
+    background-color: #EB1D36;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    position: relative;
+}
+
+.header__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.header__logo {
+   height: 8rem
+}
+
+.header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+    letter-spacing: 1rem;
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    animation: moveInLeft 1s none;
+}
+
+.heading-primary--sub {
+    display: block;
+    font-size: 1.5rem;
+    animation: moveInRight 1s none;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.btn--header:hover {
+    transform: translateY(-0.6rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+}
+
+.btn--header:active {
+    transform: translateY(0);
+    box-shadow: 0 1rem .5rem rgba(0, 0, 0, .5);
+}
+
+.btn--header {
+    background-color: #fff;
+    color: #777;
+    font-weight: 1000;
+    animation: moveUp 1s ease-out .75s backwards;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s; 
+}
+
+.btn:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+.btn--header::after {
+    background-color: #fff;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav--menu {
+    background-color: #777;
+    height: 5rem;
+}
