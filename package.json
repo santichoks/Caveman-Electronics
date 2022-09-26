@@ -1,0 +1,19 @@
+{
+  "name": "caveman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "overview.js",
+  "scripts": {
+    "compile:sass": "node-sass style.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santichoks/Caveman-Electronics-Website.git"
+  },
+  "author": "Santichok Sangarun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santichoks/Caveman-Electronics-Website/issues"
+  },
+  "homepage": "https://github.com/santichoks/Caveman-Electronics-Website#readme"
+}
