@@ -4,7 +4,7 @@
   "description": "",
   "main": "overview.js",
   "scripts": {
-    "compile:sass": "node-sass sass/style.scss css/style.css -w"
+    "compile:sass": "node-sass sass/style.scss css/style.css -w" 
   },
   "repository": {
     "type": "git",
@@ -17,3 +17,4 @@
   },
   "homepage": "https://github.com/santichoks/Caveman-Electronics-Website#readme"
 }
+ 
