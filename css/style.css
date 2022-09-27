@@ -118,8 +118,7 @@ body {
 .feature-row {
   max-width: 114rem;
   display: flex;
-  column-gap: 6rem;
-  justify-content: space-between; }
+  column-gap: 6rem; }
 
 .feature-column {
   flex: 1 1 0;
