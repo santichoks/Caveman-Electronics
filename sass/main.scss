@@ -116,38 +116,182 @@ body {
     }
 }
 
+.heading-text {
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 8rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 75em) {
+
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .row {
+        flex-direction: column;
+        row-gap: 2rem;
+
+        .feature-column {
+            width: 50% !important;
+        }
+
+        .device-column {
+            height: 45rem !important;
+            margin-bottom: 8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 30em) {
+
+    html {
+        font-size: 45%;
+    }
+
+}
+
+.row {
+    max-width: $grid-width;
+    display: flex;
+    column-gap: $gutter-horizontal;
+    margin: 0 auto;
+    align-items: center;
+    
+
+    .feature-column {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    .device-column {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+}
+
 .section-features {
-    background-color: $color-cream;
     padding: 30rem 0;
-    margin-top: -20vh;
-    display: flex;
-    justify-content: center;
-}
-
-.feature-row {
-    max-width: 114rem;
-    display: flex;
-    column-gap: 6rem;
-}
-
-.feature-column {
-    flex: 1 1 0;
-    background-color: $color-white;
-    color: $color-dark-gray;
-    transition: all .3s;
-    img {
-        height: 5rem;
-    }
-    &:hover {
-        transform: translateY(-1.5rem) scale(1.05);
-        background-color: $color-white;
-    }
+    margin-top: -25rem;
+    background-color: $color-cream;
 }
 
 .feature-box {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    padding: 2.5rem;
+    background-color: $color-white;
+    color: $color-dark-gray;
     text-align: center;
     border-radius: 5px;
-    padding: 2.5rem;
-    box-shadow: 0 1.5rem 2rem rgba($color-black, .15);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    transition: all .3s;
+
+    &__icon {
+        max-width: 6rem;
+        margin-bottom: .5rem;
+    }
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.02);
+    }
+
+    &__text {
+        margin-top: 1.5rem;
+    }
+}
+
+.section-devices {
+    padding: 10rem 0 70rem 0;
+    background-color: $color-red;
+    transform: skewY(-7deg);
+    margin-top: -12rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+.card {
+    text-align: center;
+    position: relative;
+    &__side {
+        transform: perspective(150rem);
+        height: 52rem;
+        position: absolute;
+        width: 100%;
+        transition: all .8s;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+        overflow: hidden;
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(-180deg);
+            background-color: $color-cream;
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+
+        &-1 {
+            background-image: url(../img/Arduino-Uno-R3.jpg);
+        }
+
+        &-2 {
+            background-image: url(../img/Raspberry-Pi4-Model-B.jpg);
+        }
+
+        &-3 {
+            background-image: url(../img/Raspberry-Pi-Pico.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 2rem;
+        color: $color-dark-gray;
+    }
+
+    &__detail {
+        padding: 2rem;
+        ul {
+            width: 70%;
+            list-style: none;
+            margin: 0 auto;
+
+            li {
+                font-size: 1.5rem;
+                padding: 1rem;
+                text-align: center;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-gray;
+                }
+            }
+        }
+    }
+    
 }
