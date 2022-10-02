@@ -138,6 +138,22 @@ body {
         font-size: 50%;
     }
 
+    body {
+        padding: 0;
+    }
+
+    .section-features {
+        padding: 30rem 0 20rem 0 !important;
+    }
+
+    .section-devices {
+        padding: 10rem 0 10rem 0 !important;
+    }
+
+    .device-column {
+        width: 35rem !important;
+    }
+
     .row {
         flex-direction: column;
         row-gap: 2rem;
