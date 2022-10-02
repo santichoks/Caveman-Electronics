@@ -61,7 +61,7 @@ body {
     display: block;
     font-size: 6rem;
     animation: moveInLeft 1s none;
-    background: url(../img/Colorful.gif);
+    background-image: url(../img/Colorful.gif);
     -webkit-background-clip: text;
     color: transparent; }
   .heading-primary--sub {
