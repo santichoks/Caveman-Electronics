@@ -130,6 +130,11 @@ body {
     html {
         font-size: 56.25%;
     }
+
+    .section-features {
+        padding: 40rem 0 20rem 0 !important;
+        margin-top: -35rem !important; 
+    }
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -143,7 +148,8 @@ body {
     }
 
     .section-features {
-        padding: 30rem 0 20rem 0 !important;
+        padding: 40rem 0 20rem 0 !important;
+        margin-top: -35rem !important; 
     }
 
     .section-devices {
