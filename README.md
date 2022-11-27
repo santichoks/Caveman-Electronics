@@ -1,6 +1,6 @@
 <h1>Caveman-Electronics</h1>
 <p align="center">
-    <img src="https://github.com/santichoks/Caveman-Electronics/blob/main/img/demo.gif?raw=true" height="500"/>
+    <img src="https://github.com/santichoks/Caveman-Electronics/blob/main/img/demo.gif?raw=true" height="300"/>
 </p>
 <p align="center">
     :point_right: <a href="https://santichoks.github.io/Caveman-Electronics/">Click</a>
