@@ -1,5 +1,7 @@
 <h1>Caveman-Electronics-Landing-Page</h1>
 
+<img src="https://github.com/santichoks/Caveman-Electronics/blob/main/img/demo.gif?raw=true" height="500"/>
+
 <h3>Version</h3>
 <ul>
     <li><strong>1.0.0</strong></li>
