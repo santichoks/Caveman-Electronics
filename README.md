@@ -1,6 +1,4 @@
-<h1 style="text-decoration:none;">
-    Caveman-Electronics <a href="https://santichoks.github.io/Caveman-Electronics/">Click</a>
-</h1>
+<h1>Caveman-Electronics</h1> <a href="https://santichoks.github.io/Caveman-Electronics/">Click</a>
 
 <img src="https://github.com/santichoks/Caveman-Electronics/blob/main/img/demo.gif?raw=true" height="500"/>
 
