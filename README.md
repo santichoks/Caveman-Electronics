@@ -1,4 +1,6 @@
-<h1>Caveman-Electronics-Landing-Page</h1>
+<h1>
+    Caveman-Electronics-Landing-Page <a href="https://santichoks.github.io/Caveman-Electronics/">Click</a>
+</h1>
 
 <img src="https://github.com/santichoks/Caveman-Electronics/blob/main/img/demo.gif?raw=true" height="500"/>
 
@@ -16,7 +18,5 @@
 <ul>
     <li>CSS Preprocessor</li>
 </ul>
-
-<a href="https://santichoks.github.io/Caveman-Electronics/">Click</a>
 
 
