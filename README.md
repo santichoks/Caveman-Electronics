@@ -8,7 +8,7 @@
 
 <h3>Version</h3>
 <ul>
-    <li>1.0.0</li>
+    <li><strong>1.0.0</strong></li>
 </ul>
 
 <h3>Introduction</h3>
